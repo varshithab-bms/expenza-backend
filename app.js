@@ -7,11 +7,18 @@ const profileRoutes = require('./routes/profileRoutes');
 
 const app = express();
 
-// CORS config for your frontend IP
-app.use(cors({
-  origin: 'http://192.168.43.111:5173',
-  credentials: true
-}));
+// ✅ Updated CORS config
+const corsOptions = {
+  origin: [
+    'http://192.168.43.111:5173',              // local dev
+    'http://localhost:5173',                   // also for local dev
+    'https://expenza-omega.vercel.app'         // ✅ live deployed frontend
+  ],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // allow preflight
 
 // Parse JSON request bodies
 app.use(express.json());
@@ -19,6 +26,7 @@ app.use(express.json());
 // API routes
 app.use('/api/auth', authRoutes);
 app.use('/api/expenses', expenseRoutes);
+app.use('/api/profile', profileRoutes);
 
 // Test route
 app.get('/', (req, res) => {
