@@ -7,14 +7,10 @@ const profileRoutes = require('./routes/profileRoutes');
 
 const app = express();
   const corsOptions = {
-  origin: [
-    'https://expenza-omega.vercel.app',
-    'https://expenaaa.vercel.app',
-    'https://expenaa-e1id.vercel.app/',
-    'http://localhost:5173'
-  ],
-  credentials: true,
-};
+  app.use(cors({
+  origin: ['http://localhost:5173', 'https://expenaa-e1id.vercel.app'],
+  credentials: true
+}));
 
 app.use(cors(corsOptions));
 app.options('*', cors(corsOptions)); // allow preflight
