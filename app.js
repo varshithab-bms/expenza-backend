@@ -12,7 +12,17 @@ const corsOptions = {
   origin: [
     'http://192.168.43.111:5173',              // local dev
     'http://localhost:5173',                   // also for local dev
-    'https://expenza-omega.vercel.app'         // ✅ live deployed frontend
+    'https://expenza-omega.vercel.app',
+    'http://192.168.43.111:5173',              // local dev
+    'http://localhost:5173',                   // also for local dev
+    'https://expenza-omega.vercel.app' 
+    'expenaaa.vercel.app',
+    'expenaaa-git-main-varshitha-bs-projects.vercel.app',
+    'expenaaa-p6ytow0bx-varshitha-bs-projects.vercel.app'// ✅ live deployed frontend
+  ],
+  credentials: true,
+};
+// ✅ live deployed frontend
   ],
   credentials: true,
 };
