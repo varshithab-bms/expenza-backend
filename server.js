@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI, {
   console.log('✅ MongoDB connected');
   // Start server only after DB connects
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🚀 Server running at http://192.168.43.111:${PORT}`);
+    console.log(`🚀 Server running at https://expenza-backend-9l3h.onrender.com`);
   });
 })
 .catch(err => {
