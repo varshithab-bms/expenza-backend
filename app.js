@@ -6,19 +6,11 @@ const expenseRoutes = require('./routes/expenseRoutes');
 const profileRoutes = require('./routes/profileRoutes');
 
 const app = express();
-
-// ✅ Updated CORS config
-const corsOptions = {
+  const corsOptions = {
   origin: [
-    'http://192.168.43.111:5173',              // local dev
-    'http://localhost:5173',                   // also for local dev
     'https://expenza-omega.vercel.app',
-    'http://192.168.43.111:5173',              // local dev
-    'http://localhost:5173',                   // also for local dev
-    'https://expenza-omega.vercel.app'],
-  credentials: true,
-};
-// ✅ live deployed frontend
+    'https://expenaaa.vercel.app', // <-- add this properly as a string inside the array
+    'http://localhost:5173'
   ],
   credentials: true,
 };
