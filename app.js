@@ -1,4 +1,4 @@
-itconst express = require('express');
+const express = require('express');
 const cors = require('cors');
 
 const authRoutes = require('./routes/authRoutes');
@@ -6,11 +6,11 @@ const expenseRoutes = require('./routes/expenseRoutes');
 const profileRoutes = require('./routes/profileRoutes');
 
 const app = express();
-  const corsOptions = {
-  app.use(cors({
+
+const corsOptions = {
   origin: ['http://localhost:5173', 'https://expenaaa.vercel.app'],
-  credentials: true
-}));
+  credentials: true,
+};
 
 app.use(cors(corsOptions));
 app.options('*', cors(corsOptions)); // allow preflight
