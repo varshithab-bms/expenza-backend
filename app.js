@@ -9,7 +9,7 @@ const app = express();
   const corsOptions = {
   origin: [
     'https://expenza-omega.vercel.app',
-    'https://expenaaa.vercel.app', // <-- add this properly as a string inside the array
+    'https://expenaaa.vercel.app',
     'http://localhost:5173'
   ],
   credentials: true,
