@@ -1,4 +1,4 @@
-const express = require('express');
+itconst express = require('express');
 const cors = require('cors');
 
 const authRoutes = require('./routes/authRoutes');
@@ -8,7 +8,7 @@ const profileRoutes = require('./routes/profileRoutes');
 const app = express();
   const corsOptions = {
   app.use(cors({
-  origin: ['http://localhost:5173', 'https://expenaaa.vercel.app/'],
+  origin: ['http://localhost:5173', 'https://expenaaa.vercel.app'],
   credentials: true
 }));
 
