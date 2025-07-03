@@ -10,6 +10,7 @@ const app = express();
   origin: [
     'https://expenza-omega.vercel.app',
     'https://expenaaa.vercel.app',
+    'https://expenaa-e1id.vercel.app/',
     'http://localhost:5173'
   ],
   credentials: true,
