@@ -8,7 +8,7 @@ const profileRoutes = require('./routes/profileRoutes');
 const app = express();
   const corsOptions = {
   app.use(cors({
-  origin: ['http://localhost:5173', 'https://expenaa-e1id.vercel.app'],
+  origin: ['http://localhost:5173', 'https://expenaaa.vercel.app/'],
   credentials: true
 }));
 
